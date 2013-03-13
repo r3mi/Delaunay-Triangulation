@@ -28,6 +28,7 @@ Delaunay.Triangulate = function ( vertices )
 	
 	var dx = xmax - xmin;
 	var dy = ymax - ymin;
+    dx *= 10; dy *= 10; // make supertriangle big enough to get a convex hull
 	var dmax = (dx > dy) ? dx : dy;
 	var xmid = (xmax + xmin) * 0.5;
 	var ymid = (ymax + ymin) * 0.5;
